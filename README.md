@@ -8,11 +8,12 @@
 
 ## Product Backlog
 * [Requirements Discovery](https://docs.google.com/spreadsheets/d/1smEJrFjA-T7XzN0RymLpl9p4-XkDZICNJcUuvl5Rz0I/edit?usp=sharing)
-* [Validation](https://docs.google.com/spreadsheets/d/1smEJrFjA-T7XzN0RymLpl9p4-XkDZICNJcUuvl5Rz0I/edit?usp=sharing)
+* [Validation]([https://docs.google.com/spreadsheets/d/1smEJrFjA-T7XzN0RymLpl9p4-XkDZICNJcUuvl5Rz0I/edit?usp=sharing](https://docs.google.com/document/d/1D4JbrVFbEiKkGNBaZQVTx44nWic8BEmf/edit?usp=sharing&ouid=107156411687307834802&rtpof=true&sd=true))
 * [Product Backlog](https://docs.google.com/spreadsheets/d/1smEJrFjA-T7XzN0RymLpl9p4-XkDZICNJcUuvl5Rz0I/edit?usp=sharing)
 
 ## Architecture & Design
 * [Architecture & Design]()
+
 
 
 
