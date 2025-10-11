@@ -1,8 +1,8 @@
 ## App Description
 
 ## Team Picture
-<img src="team4-picture.jpg" alt="Team photo" width="300">
-<img src="IMG_0004.jpg" alt="Team photo and Omar" width="300">
+<img src="team4-picture.jpg" alt="Team photo" width="300"> <img src="IMG_0004.jpg" alt="Team photo and Omar" width="300">
+
 
 
 ## Idea Proposal
@@ -18,6 +18,7 @@
 
 ## Architecture & Design
 * [Architecture & Design]()
+
 
 
 
