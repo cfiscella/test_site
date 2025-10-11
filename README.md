@@ -5,12 +5,13 @@
 * [Calendar]()
 
 ## Product Backlog
-* [Requirements Discovery]()
+* [Requirements Discovery](https://docs.google.com/spreadsheets/d/1smEJrFjA-T7XzN0RymLpl9p4-XkDZICNJcUuvl5Rz0I/edit?usp=sharing)
 * [Validation]()
 * [Product Backlog](https://docs.google.com/spreadsheets/d/1smEJrFjA-T7XzN0RymLpl9p4-XkDZICNJcUuvl5Rz0I/edit?usp=sharing)
 
 ## Architecture & Design
 * [Architecture & Design]()
+
 
 
 
