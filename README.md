@@ -1,7 +1,7 @@
 ## App Description
 
 ## Team Picture
-<img src="team4photo.jpg" alt="Team photo" width="300"> <img src="IMG_0004.jpg" alt="Team photo and Omar" width="300">
+<img src="team4photo.jpg" alt="Team photo" width="300"> <img src="omar.png" alt="Team photo and Omar" width="300">
 
 
 
