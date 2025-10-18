@@ -17,7 +17,7 @@
 * [Product Backlog](https://docs.google.com/spreadsheets/d/1smEJrFjA-T7XzN0RymLpl9p4-XkDZICNJcUuvl5Rz0I/edit?usp=sharing)
 
 ## Architecture & Design
-* [Architecture & Design]()
+* [Architecture & Design](https://paceuniversity-my.sharepoint.com/:w:/g/personal/so35931n_pace_edu/ERrYH5QA1phFv2hKf2PaQ4sBAE9MhThQFGy1dQgDK34sBQ?e=0Le3Ez)
 
 
 
