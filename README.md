@@ -19,15 +19,11 @@
 ## Architecture & Design
 * [Architecture & Design](https://paceuniversity-my.sharepoint.com/:w:/g/personal/so35931n_pace_edu/ERrYH5QA1phFv2hKf2PaQ4sBAE9MhThQFGy1dQgDK34sBQ?e=0Le3Ez)
 
-## Sprint Goal
-### User Stories
-* <b>Number and Desc: </b>
-* <b>Number and Desc: </b>
-* <b>Number and Desc: </b>
-
-### Velocity
-
-### Number of User Stories
+## Sprint 1
+* [Sprint planning](https://docs.google.com/spreadsheets/d/1smEJrFjA-T7XzN0RymLpl9p4-XkDZICNJcUuvl5Rz0I/edit?usp=sharing)
+* [Scrums]([link goes here])
+* [Sprint demo feature]([link goes here])
+* [Sprint retrospective]([link goes here])
 
 
 
