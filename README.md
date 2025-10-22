@@ -19,11 +19,15 @@
 ## Architecture & Design
 * [Architecture & Design](https://paceuniversity-my.sharepoint.com/:w:/g/personal/so35931n_pace_edu/ERrYH5QA1phFv2hKf2PaQ4sBAE9MhThQFGy1dQgDK34sBQ?e=0Le3Ez)
 
+## Sprint Goal
+### User Stories
+* <b>Number and Desc: </b>
+* <b>Number and Desc: </b>
+* <b>Number and Desc: </b>
 
+### Velocity
 
-
-
-
+### Number of User Stories
 
 
 
