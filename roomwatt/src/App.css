@@ -1,19 +1,32 @@
 #root {
-  max-width: 1280px;
   margin: 0 auto;
-  padding: 2rem;
+  padding: 0;
   text-align: center;
+  padding-top: 50px;
+}
+
+:root {
+      --primary-color: #22B14C;
+      --secondary-color: #FFF200;
 }
 
 header {
   position: fixed;
   top: 0;
   left: 0;
+
+  width: 100%;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
 }
 
-footer {
-  position: fixed;
-  bottom: 0;
-  left: 0;
+#home-page {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--primary-color);
 }
-

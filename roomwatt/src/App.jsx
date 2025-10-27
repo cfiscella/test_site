@@ -11,9 +11,9 @@ function App() {
     <>
       <Router>
         <Routes>
-          {/* pages in here will not have a header & footer */}
+          {/* pages in here will not have a header */}
           <Route element={<Layout/>}>
-            {/* pages in here will have a header & footer */}
+            {/* pages in here will have a header */}
             <Route path={"/"} element={<Home/>}/> {/* for example this page will have header & footer */}
           </Route>
         </Routes>
