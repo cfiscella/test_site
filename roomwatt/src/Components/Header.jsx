@@ -5,7 +5,7 @@ function Header() {
     return(
         <>
             <header>
-                <h1>This is the Header</h1>
+                <h1>Room Watt</h1>
             </header>
         </>
     )

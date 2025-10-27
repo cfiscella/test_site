@@ -1,13 +1,11 @@
 #root {
-  margin: 0 auto;
+  --primary-color: #22B14C;
+  --secondary-color: #FFF200;
+  --header-height: 50px;
+
+  margin: 0;
   padding: 0;
   text-align: center;
-  padding-top: 50px;
-}
-
-:root {
-      --primary-color: #22B14C;
-      --secondary-color: #FFF200;
 }
 
 header {
@@ -16,11 +14,21 @@ header {
   left: 0;
 
   width: 100%;
+  min-height: --header-height;
 
   display: flex;
+  flex-direction: column;
   flex-direction: row;
+  text-align: center;
   align-items: center;
   justify-content: center;
+
+  background-color: white;
+}
+
+header h1 {
+  font-size: 25px;
+  color: var(--primary-color);
 }
 
 #home-page {
@@ -29,4 +37,5 @@ header {
   display: flex;
   flex-direction: column;
   background-color: var(--primary-color);
+  padding: var(--header-height) 1rem;
 }
