@@ -21,7 +21,7 @@
 
 ## Sprint 1
 * [Sprint planning](https://docs.google.com/spreadsheets/d/1smEJrFjA-T7XzN0RymLpl9p4-XkDZICNJcUuvl5Rz0I/edit?usp=sharing](https://docs.google.com/spreadsheets/d/1smEJrFjA-T7XzN0RymLpl9p4-XkDZICNJcUuvl5Rz0I/edit?gid=202486313#gid=202486313))
-* [Scrums](https://paceuniversity-my.sharepoint.com/:w:/r/personal/so35931n_pace_edu/Documents/Scrum%201.docx?d=w389f366bbbcf474bb01f30bab881e943&csf=1&web=1&e=ZZ2qhw))
+* [Scrums](https://paceuniversity-my.sharepoint.com/:w:/r/personal/so35931n_pace_edu/Documents/Scrum%201.docx?d=w389f366bbbcf474bb01f30bab881e943&csf=1&web=1&e=ZZ2qhw)
 * [Sprint demo feature]([link goes here])
 * [Sprint retrospective]([link goes here])
 
