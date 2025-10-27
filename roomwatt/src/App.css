@@ -39,3 +39,9 @@ header h1 {
   background-color: var(--primary-color);
   padding: var(--header-height) 1rem;
 }
+
+#home-page img {
+  width: 130px;
+  height: 130px;
+  object-fit: contain;
+}
