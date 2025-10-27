@@ -8,6 +8,11 @@
   text-align: center;
 }
 
+button { 
+  border: none;
+  background-color: transparent;
+}
+
 header {
   position: fixed;
   top: 0;
@@ -38,4 +43,14 @@ header h1 {
   flex-direction: column;
   background-color: var(--primary-color);
   padding: var(--header-height) 1rem;
+}
+
+#home-page img {
+  width: 130px;
+  height: 130px;
+  object-fit: contain;
+}
+
+.add-room-button {
+  width: fit-content;
 }
