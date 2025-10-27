@@ -54,3 +54,23 @@ header h1 {
 .add-room-button {
   width: fit-content;
 }
+
+.blank-home-cards {
+  width: 50px;
+  height: 20px;
+  border-radius: 5px;
+}
+
+.total-watts {
+  background-color: var(--secondary-color);
+}
+
+.most-watts {
+  background-color: #FF0000;
+}
+
+.home-top-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
