@@ -19,9 +19,46 @@ export const RoomProvider = ({ children }) => {
       rooms.map((r) => (r.id === id ? { ...r, name: newName } : r))
     );
   };
+  
+  const addDevice = (roomId, device) => {
+    setRooms(
+      rooms.map((room) =>
+        room.id === roomId
+          ? { ...room, devices: [...room.devices, { id: Date.now(), ...device }] }
+          : room
+      )
+    );
+  };
+
+  const removeDevice = (roomId, deviceId) => {
+    setRooms(
+      rooms.map((room) =>
+        room.id === roomId
+          ? { ...room, devices: room.devices.filter((d) => d.id !== deviceId) }
+          : room
+      )
+    );
+  };
+
+    const calcRoomWatts = (room) => {
+    if (!room?.devices) return 0;
+    return room.devices.reduce(
+      (sum, d) => sum + (Number(d.watts) || 0) * (Number(d.hours) || 0),
+      0
+    );
+  };
 
   return (
-    <RoomContext.Provider value={{ rooms, addRoom, deleteRoom, renameRoom }}>
+    <RoomContext.Provider value={{ 
+      rooms, 
+      addRoom, 
+      deleteRoom, 
+      renameRoom,
+      addDevice,
+      removeDevice,
+      calcRoomWatts,
+    }}
+    >
       {children}
     </RoomContext.Provider>
   );
