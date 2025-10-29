@@ -15,6 +15,7 @@ function App() {
           <Route element={<Layout/>}>
             {/* pages in here will have a header */}
             <Route path={"/"} element={<Home/>}/> {/* for example this page will have header & footer */}
+            <Route path="/rooms/:id" element={<RoomPage />} /> {/* new route */}
           </Route>
         </Routes>
       </Router>
