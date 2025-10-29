@@ -4,6 +4,8 @@ import { Button } from 'react-bootstrap';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';  // ✅ Fixed
 import Home from './Pages/Home.jsx';
 import { Layout } from './Layout.jsx';
+import RoomPage from './RoomPage.jsx';
+
 
 function App() {
 

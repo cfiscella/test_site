@@ -19,31 +19,31 @@ export const RoomProvider = ({ children }) => {
       rooms.map((r) => (r.id === id ? { ...r, name: newName } : r))
     );
   };
-  
-  const addDevice = (roomId, device) => {
+
+  const addAppliance = (roomId, appliance) => {
     setRooms(
       rooms.map((room) =>
         room.id === roomId
-          ? { ...room, devices: [...room.devices, { id: Date.now(), ...device }] }
+          ? { ...room, appliances: [...room.appliances, { id: Date.now(), ...appliance }] }
           : room
       )
     );
   };
 
-  const removeDevice = (roomId, deviceId) => {
+  const removeAppliance = (roomId, applianceId) => {
     setRooms(
       rooms.map((room) =>
         room.id === roomId
-          ? { ...room, devices: room.devices.filter((d) => d.id !== deviceId) }
+          ? { ...room, appliances: room.appliances.filter((a) => a.id !== applianceId) }
           : room
       )
     );
   };
 
     const calcRoomWatts = (room) => {
-    if (!room?.devices) return 0;
-    return room.devices.reduce(
-      (sum, d) => sum + (Number(d.watts) || 0) * (Number(d.hours) || 0),
+    if (!room?.appliances) return 0;
+    return room.appliances.reduce(
+      (sum, a) => sum + (Number(a.watts) || 0) * (Number(a.hours) || 0),
       0
     );
   };
@@ -54,8 +54,8 @@ export const RoomProvider = ({ children }) => {
       addRoom, 
       deleteRoom, 
       renameRoom,
-      addDevice,
-      removeDevice,
+      addAppliance,
+      removeAppliance,
       calcRoomWatts,
     }}
     >
