@@ -5,7 +5,7 @@ import { Container, Row, Col, Card, Button } from "react-bootstrap";
 import { RoomContext } from "../context/RoomContext";
 import AddApplianceForm from "./AddApplianceForm";
 
-const RoomPage = () => {
+function RoomPage () {
   const { id } = useParams();
   const navigate = useNavigate();
   const { rooms, addAppliance, deleteAppliance } = useContext(RoomContext);
