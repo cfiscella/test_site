@@ -5,6 +5,7 @@ import RoomContext from "./RoomPage.jsx"
 import { useNavigate } from "react-router-dom";
 
 function Home() {
+
     return (
         <>
             <section id="home-page">
