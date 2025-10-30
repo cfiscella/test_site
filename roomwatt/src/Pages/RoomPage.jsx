@@ -2,8 +2,8 @@
 import React, { useContext, useState } from "react";
 import { useParams, useNavigate } from "react-router-dom";
 import { Container, Row, Col, Card, Button } from "react-bootstrap";
-import { RoomContext } from "./RoomContext.jsx";
-import AddApplianceForm from "./AddApplianceForm";
+import { RoomContext } from "../RoomContext.jsx";
+import AddApplianceForm from "../AddApplianceForm.jsx";
 
 const RoomPage = () => {
   const { id } = useParams();
