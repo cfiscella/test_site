@@ -1,6 +1,7 @@
 #root {
   --primary-color: #22B14C;
   --secondary-color: #FFF200;
+  --accent-color: #FFC90E;
   --header-height: 50px;
 
   margin: 0;
@@ -88,12 +89,24 @@ header h1 {
   border-radius: 5px;
 }
 
-.total-watts {
+.watt-rects {
+  width: 75px;
+  height: 30px;
+  border-radius: 8px;
+}
+
+#watt-rects-group {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+
+#total-watts {
   background-color: var(--secondary-color);
 }
 
-.most-watts {
-  background-color: #FF0000;
+#most-watts {
+  background-color: var(--accent-color);
 }
 
 .home-top-row {
