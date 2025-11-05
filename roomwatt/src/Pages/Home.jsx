@@ -11,6 +11,10 @@ function Home() {
             <section id="home-page">
                 <div className="home-top-row">
                     <AddRoomButton />
+                    <div id="watt-rects-group">
+                        <div className="watt-rects" id="most-watts"></div>
+                        <div className="watt-rects" id="total-watts"></div>
+                    </div>
                 </div>
             </section>
         </>
