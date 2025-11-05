@@ -26,7 +26,7 @@ function CreateRoomPage() {
             <section id="create-room-page">
                 <DropDown setOpen={setOpen} open={open} defaultChoice={"Choose Room"} choices={choices}/>
 
-                <div className="add-appliance-group" style={{ transition: "opacity 0.2s ease-in-out", opacity: open ? "0%" : "100%" }}>
+                <div className="add-appliance-group" style={{ transition: "opacity 0.05s ease-in-out", opacity: open ? "0%" : "100%" }}>
                     <img className="add-appliance-img" src={plug} alt="PLUG"/>
                     <p>No appliances yet.</p>
                     <Button className="add-appliance-button" variant="primary" onClick={() => enterAddAppliance()}>Add Appliance</Button>
