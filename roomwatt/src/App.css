@@ -21,7 +21,7 @@ header {
   left: 0;
 
   width: 100%;
-  min-height: var(--header-height); /*fixed variable usage*/
+  min-height: var(--header-height); /*fixed variable*/
 
   display: flex;
   flex-direction: column;
@@ -58,7 +58,7 @@ header h1 {
 }
 
 .add-appliance-group {
-  width: 200px;
+  width: 150px;
   display: flex;
   flex-direction: column;
   gap: 10px;
