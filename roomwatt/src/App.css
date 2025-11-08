@@ -12,6 +12,7 @@
 button { 
   border: none;
   background-color: transparent;
+  cursor: pointer; /*pointer could add better UX*/
 }
 
 header {
