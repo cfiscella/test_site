@@ -31,9 +31,10 @@ function RoomNameList(props) {
                             style={{ display: props.selectedRoom !== room ? "none" : "inline"}}
                             />
                         </div>
-                        <hr/>
+                        <hr style={{ display : index === commonRooms.length-1 && "none" }}/>
                     </div>
-                ))}
+                ))}  
+                <div className='list-spacer'></div>
             </div>
         </div>
         </>

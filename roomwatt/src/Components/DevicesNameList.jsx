@@ -31,9 +31,10 @@ function DevicesNameList(props) {
                             <img src={props.selectedDevices.includes(device) ? selected : notSelected} />
                         </div>
 
-                        <hr/>
+                        <hr style={{ display : index === commonDevices.length-1 && "none" }}/>
                     </div>
-                ))}                
+                ))}  
+                <div className='list-spacer'></div>
             </div>
         </div>
         </>
