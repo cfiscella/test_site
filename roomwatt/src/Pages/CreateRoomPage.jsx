@@ -8,6 +8,9 @@ import DevicesNameList from "../Components/DevicesNameList";
 
 function CreateRoomPage() {
 
+    const [selectedRoom, setSelectedRoom] = useState("");
+    const [selectedDevices, setSelectedDevices] = useState([]);
+
     const indexText = [
         {
             header: "Choose a room",
@@ -61,13 +64,24 @@ function CreateRoomPage() {
 
                 {
                 
-                  index === 0 ? <RoomNameList /> 
-                : index === 1 ? <DevicesNameList />
+                  index === 0 ? <RoomNameList setSelectedRoom={setSelectedRoom} selectedRoom={selectedRoom}/> 
+                : index === 1 ? <DevicesNameList setSelectedDevices={setSelectedDevices} selectedDevices={selectedDevices}/>
                 : null
                 
                 }
 
-                <Button variant="success" className="bottom-primary-button  rounded-pill" onClick={() => incrementIndex()}>Next</Button>
+                <Button 
+                    variant="success" 
+                    className="bottom-primary-button  rounded-pill" 
+                    onClick={() => incrementIndex()}
+                    disabled= {
+                        index === 0 ? selectedRoom ? false : true : 
+                        index === 1 ? selectedDevices.length !== 0 ? false : true :
+                        false
+                    }
+                >
+                    Next
+                </Button>
 
             </section>
         </>
