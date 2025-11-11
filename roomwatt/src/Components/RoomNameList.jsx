@@ -4,10 +4,13 @@ import check from '../assets/check-green.svg';
 function RoomNameList(props) {
 
     const commonRooms = ["Bedroom", "Living room", "Kitchen", "Main bedroom", "Family room", "Dining room", "Office", "Basement", "Den", "Lounge", "Grarge", "Hallway", "Outdoor lights", "Patio", "Backyard", "Front room", "Play room"]
-    const [selectedRoom, setSelectedRoom] = useState("");
 
     function roomClicked(room) {
-        setSelectedRoom(room);
+        if(room === props.selectedRoom) {
+            props.setSelectedRoom("");
+        } else {
+            props.setSelectedRoom(room);
+        }
     }
 
     return(
@@ -18,14 +21,14 @@ function RoomNameList(props) {
                 {commonRooms.map((room, index) => (
                     <div key={index}>
                         <div className="common-name-group" onClick={() => roomClicked(room)}>
-                            <p className={ selectedRoom === room ? "common-name common-name-active" : "common-name"}>
+                            <p className={ props.selectedRoom === room ? "common-name common-name-active" : "common-name"}>
                                 {room}
                             </p>
 
                             <img 
                             src={check} 
                             alt="CHECK MARK"
-                            style={{ display: selectedRoom !== room ? "none" : "inline"}}
+                            style={{ display: props.selectedRoom !== room ? "none" : "inline"}}
                             />
                         </div>
                         <hr/>
