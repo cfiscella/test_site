@@ -1,3 +1,9 @@
+@import "@fontsource/inter";
+@import "@fontsource/inter/400.css"; /* Regular */
+@import "@fontsource/inter/500.css"; /* Medium */
+@import "@fontsource/inter/600.css"; /* Semi-Bold */
+@import "@fontsource/inter/700.css"; /* Bold */
+
 #root {
   --primary-color: #22B14C;
   --secondary-color: #FFF200;
@@ -6,7 +12,8 @@
 
   margin: 0;
   padding: 0;
-  text-align: center;
+
+  font-family: 'Inter', sans-serif;
 }
 
 button { 
@@ -47,14 +54,85 @@ header h1 {
   padding: var(--header-height) 1rem;
 }
 
+#create-room-page {
+  color: #FFFFFF;
+  background-color: #171717;
+}
+
+.back-and-exit-group {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.back-and-exit-group button img {
+  height: 30px;
+}
+
+.add-room-process-header {
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--primary-color);
+}
+
+.add-room-process-subtext {
+  font-size: 15px;
+  font-weight: 500;
+  margin-bottom: 25px;
+  opacity: 60%;
+}
+
+.add-room-process-container-title {
+  font-size: 15px;
+  font-weight: 500;
+  opacity: 60%;
+}
+
+.common-room-name-container {
+  height: 70vh;
+  width: 100%;
+  overflow: auto;
+}
+
+.common-room-name-container p {
+  font-weight: 400;
+  font-size: 15px;
+}
+
+.common-room-name-container hr {
+  margin-bottom: 20px;
+}
+
+.common-room-name-group {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding-right: 10px;
+  margin-bottom: -5px;
+}
+
+.bottom-primary-button {
+  position: fixed;
+  bottom: 45px;
+  width: 95%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: var(--primary-color) !important;
+  font-family: 'Inter', sans-serif !important;
+  font-weight: 500 !important;
+}
+
+.bottom-button-bkg {
+  position: fixed;
+  bottom: 45px;
+}
+
 #home-page img {
   width: 130px;
   height: 130px;
   object-fit: contain;
-}
-
-.add-room-button {
-  width: fit-content;
 }
 
 .add-appliance-group {
@@ -97,6 +175,7 @@ header h1 {
 }
 
 #watt-rects-group {
+  margin-top: 10px;
   display: flex;
   flex-direction: row;
   gap: 10px;
