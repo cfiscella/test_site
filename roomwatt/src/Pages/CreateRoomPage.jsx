@@ -5,6 +5,7 @@ import close from '../assets/close-white.svg'
 import { useNavigate } from "react-router-dom";
 import RoomNameList from "../Components/RoomNameList";
 import DevicesNameList from "../Components/DevicesNameList";
+import logo from "../assets/roomwatt-logo.svg"
 
 function CreateRoomPage() {
 
@@ -19,7 +20,7 @@ function CreateRoomPage() {
 
         {
             header: "Add devices",
-            subtext: "Select all electronic devices found in room."
+            subtext: "Select all electronic devices found in " + selectedRoom + "."
         }
     ]
 
@@ -54,12 +55,14 @@ function CreateRoomPage() {
                         <img src={back} alt="BACK"/>
                     </button>
 
+                    <img src={logo} alt="LOGO" style={{height:"38px"}}/>
+
                     <button onClick={() => goHome()}>
                         <img src={close} alt="CLOSE"/>
                     </button>
                 </div>
 
-                <h1 className="add-room-process-header">{indexText[index].header}</h1>
+                <div style={{display:"flex", flexDirection:"row", justifyContent:"space-between", alignItems:"center", marginBottom:"10px", paddingRight:"8px"}}><h1 className="add-room-process-header">{indexText[index].header}</h1></div>
                 <p className="add-room-process-subtext">{indexText[index].subtext}</p>
 
                 {

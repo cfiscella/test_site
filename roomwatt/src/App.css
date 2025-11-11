@@ -63,12 +63,17 @@ header h1 {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  align-items: center;
   margin-bottom: 20px;
 }
 
 .back-and-exit-group button img {
   height: 30px;
 }
+
+ .back-and-exit-group img {
+  height: 25px;
+ }
 
 .add-room-process-header {
   font-size: 20px;
