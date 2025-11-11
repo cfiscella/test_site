@@ -83,28 +83,32 @@ header h1 {
   opacity: 60%;
 }
 
-.add-room-process-container-title {
+.list-title {
   font-size: 15px;
   font-weight: 500;
   opacity: 60%;
 }
 
-.common-room-name-container {
+.list-container {
   height: 70vh;
   width: 100%;
   overflow: auto;
 }
 
-.common-room-name-container p {
+.common-name {
   font-weight: 400;
   font-size: 15px;
+}
+
+.common-name-active {
+  color: var(--primary-color);
 }
 
 .common-room-name-container hr {
   margin-bottom: 20px;
 }
 
-.common-room-name-group {
+.common-name-group {
   display: flex;
   flex-direction: row;
   justify-content: space-between;

@@ -4,6 +4,7 @@ import back from '../assets/back-white.svg'
 import close from '../assets/close-white.svg'
 import { useNavigate } from "react-router-dom";
 import RoomNameList from "../Components/RoomNameList";
+import DevicesNameList from "../Components/DevicesNameList";
 
 function CreateRoomPage() {
 
@@ -14,8 +15,8 @@ function CreateRoomPage() {
         },
 
         {
-            header: "Add devices to room",
-            subtext: "Select all electronics found in room."
+            header: "Add devices",
+            subtext: "Select all electronic devices found in room."
         }
     ]
 
@@ -29,7 +30,11 @@ function CreateRoomPage() {
     }
 
     function decrementIndex() {
-        if(index > 0) { setIndex(index - 1) };
+        if(index > 0) { 
+            setIndex(index - 1) 
+        } else {
+            navigate(`/`);
+        }
         console.log("index:", index);
     }
 
@@ -47,7 +52,7 @@ function CreateRoomPage() {
                     </button>
 
                     <button onClick={() => goHome()}>
-                        <img src={close} alt="CLOSE" />
+                        <img src={close} alt="CLOSE"/>
                     </button>
                 </div>
 
@@ -56,7 +61,8 @@ function CreateRoomPage() {
 
                 {
                 
-                index === 0 ? <RoomNameList /> 
+                  index === 0 ? <RoomNameList /> 
+                : index === 1 ? <DevicesNameList />
                 : null
                 
                 }
