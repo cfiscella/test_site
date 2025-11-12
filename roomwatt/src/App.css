@@ -4,7 +4,8 @@
 @import "@fontsource/inter/700.css"; /* Bold */
 
 #root {
-  --primary-color: #102617;
+  --primary-color: #22B14C;
+  --home-bkg: #102617;
   --secondary-color: #62a87c;
   --accent-color: #224424;
   --header-height: 50px;
@@ -49,7 +50,7 @@ header h1 {
   width: 100%;
   display: flex;
   flex-direction: column;
-  background-color: var(--primary-color);
+  background-color: var(--home-bkg);
   padding: var(--header-height) 1rem;
 }
 
