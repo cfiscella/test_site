@@ -1,36 +1,91 @@
 import React, { useEffect, useState } from "react";
-import DropDown from "../Components/DropDown.jsx";
-import AddAppliance from "./AddAppliancePage.jsx"
 import Button from 'react-bootstrap/Button';
-import plug from '../assets/plug.svg'
+import back from '../assets/back-white.svg'
+import close from '../assets/close-white.svg'
 import { useNavigate } from "react-router-dom";
+import RoomNameList from "../Components/RoomNameList";
+import DevicesNameList from "../Components/DevicesNameList";
+import logo from "../assets/roomwatt-logo.svg"
 
 function CreateRoomPage() {
 
-    const [room, setRoom] = useState("");
+    const [selectedRoom, setSelectedRoom] = useState("");
+    const [selectedDevices, setSelectedDevices] = useState([]);
 
-    const[open, setOpen] = useState(false);
-    const[display, setDisplay] = useState("flex");
-    
-    const choices = ["My Bedroom", "Living Room", "Second Bedroom", "Dining Room", "Kitchen", "Study Room"]
+    const indexText = [
+        {
+            header: "Choose a room",
+            subtext: "Where do you have your electronics and appliances? Here is a list of common rooms to choose from."
+        },
+
+        {
+            header: "Add devices",
+            subtext: "Select all electronic devices found in " + selectedRoom + "."
+        }
+    ]
+
+    const [index, setIndex] = useState(0);
 
     const navigate = useNavigate();
-    
-        function enterAddAppliance() {
-            console.log("navigating to create room.")
-            navigate(`/addappliance/`);
+
+    function incrementIndex() {
+        if(index < indexText.length - 1) { setIndex(index + 1) };
+        console.log("index:", index);
+    }
+
+    function decrementIndex() {
+        if(index > 0) { 
+            setIndex(index - 1) 
+        } else {
+            navigate(`/`);
         }
+        console.log("index:", index);
+    }
+
+    function goHome() {
+        console.log("navigating home.");
+        navigate(`/`);
+    }
 
     return(
         <>
             <section id="create-room-page">
-                <DropDown setOpen={setOpen} open={open} defaultChoice={"Choose Room"} choices={choices}/>
+                <div className="back-and-exit-group">
+                    <button onClick={() => decrementIndex()}>
+                        <img src={back} alt="BACK"/>
+                    </button>
 
-                <div className="add-appliance-group" style={{ transition: "opacity 0.05s ease-in-out", opacity: open ? "0%" : "100%" }}>
-                    <img className="add-appliance-img" src={plug} alt="PLUG"/>
-                    <p>No appliances yet.</p>
-                    <Button className="add-appliance-button" variant="primary" onClick={() => enterAddAppliance()}>Add Appliance</Button>
+                    <img src={logo} alt="LOGO" style={{height:"38px"}}/>
+
+                    <button onClick={() => goHome()}>
+                        <img src={close} alt="CLOSE"/>
+                    </button>
                 </div>
+
+                <div style={{display:"flex", flexDirection:"row", justifyContent:"space-between", alignItems:"center", marginBottom:"10px", paddingRight:"8px"}}><h1 className="add-room-process-header">{indexText[index].header}</h1></div>
+                <p className="add-room-process-subtext">{indexText[index].subtext}</p>
+
+                {
+                
+                  index === 0 ? <RoomNameList setSelectedRoom={setSelectedRoom} selectedRoom={selectedRoom}/> 
+                : index === 1 ? <DevicesNameList setSelectedDevices={setSelectedDevices} selectedDevices={selectedDevices}/>
+                : null
+                
+                }
+
+                <Button 
+                    variant="success" 
+                    className="bottom-primary-button  rounded-pill" 
+                    onClick={() => incrementIndex()}
+                    disabled= {
+                        index === 0 ? selectedRoom ? false : true : 
+                        index === 1 ? selectedDevices.length !== 0 ? false : true :
+                        false
+                    }
+                >
+                    Next
+                </Button>
+
             </section>
         </>
     )
