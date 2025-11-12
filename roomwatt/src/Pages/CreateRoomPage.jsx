@@ -75,7 +75,7 @@ function CreateRoomPage() {
                 
                   index === 0 ? <RoomNameList setSelectedRoom={setSelectedRoom} selectedRoom={selectedRoom}/> 
                 : index === 1 ? <DevicesNameList setSelectedDevices={setSelectedDevices} selectedDevices={selectedDevices}/>
-                : index === 2 ? <CustomizeDevices />
+                : index === 2 ? <CustomizeDevices selectedDevices={selectedDevices}/>
                 : null
                 
                 }

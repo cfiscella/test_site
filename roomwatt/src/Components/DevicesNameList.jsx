@@ -19,24 +19,24 @@ function DevicesNameList(props) {
     return(
         <>
         <div className="list-wrapper">
-            <p className="list-title">Common Devices</p>
-            <div className="list-container">
-                {commonDevices.map((device, index) => (
-                    <div key={index}>
-                        <div className="common-name-group" onClick={() => deviceClicked(device)}>
-                            <p className={ props.selectedDevices.includes(device) ? "common-name common-name-active" : "common-name"}>
-                                {device}
-                            </p>
+                <p className="list-title">Common Devices</p>
+                <div className="list-container">
+                    {commonDevices.map((device, index) => (
+                        <div key={index}>
+                            <div className="common-name-group" onClick={() => deviceClicked(device)}>
+                                <p className={ props.selectedDevices.includes(device) ? "common-name common-name-active" : "common-name"}>
+                                    {device}
+                                </p>
 
-                            <img src={props.selectedDevices.includes(device) ? selected : notSelected} />
+                                <img src={props.selectedDevices.includes(device) ? selected : notSelected} />
+                            </div>
+
+                            <hr style={{ display : index === commonDevices.length-1 && "none" }}/>
                         </div>
-
-                        <hr style={{ display : index === commonDevices.length-1 && "none" }}/>
-                    </div>
-                ))}  
-                <div className='list-spacer'></div>
+                    ))}  
+                    <div className='list-spacer'></div>
+                </div>
             </div>
-        </div>
         </>
     )
 }
