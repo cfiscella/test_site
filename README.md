@@ -25,9 +25,10 @@
 * Sprint demo feature
 * [Sprint retrospective](https://paceuniversity-my.sharepoint.com/:w:/r/personal/so35931n_pace_edu/_layouts/15/Doc.aspx?sourcedoc=%7BF8642432-0E7C-410E-952B-834082DF75E5%7D&file=Sprint%201%20Retrospective.docx&fromShare=true&action=default&mobileredirect=true)
 
-
-
-
+## Sprint 2
+[Sprint planning](https://docs.google.com/spreadsheets/d/1smEJrFjA-T7XzN0RymLpl9p4-XkDZICNJcUuvl5Rz0I/edit?gid=2012099978#gid=2012099978)
+[Scrums](https://paceuniversity-my.sharepoint.com/:w:/g/personal/so35931n_pace_edu/EQhtEdWDdeJGj517RgC6WRoBBPKz_Wmo_scPeXHKfveD5A?e=NS7m1U)
+[Sprint retrospective]()
 
 
 
