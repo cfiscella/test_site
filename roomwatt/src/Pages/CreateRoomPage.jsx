@@ -5,6 +5,7 @@ import close from '../assets/close-white.svg'
 import { useNavigate } from "react-router-dom";
 import RoomNameList from "../Components/RoomNameList";
 import DevicesNameList from "../Components/DevicesNameList";
+import CustomizeDevices from "../Components/CustomizeDevices";
 import logo from "../assets/roomwatt-logo.svg"
 
 function CreateRoomPage() {
@@ -21,6 +22,11 @@ function CreateRoomPage() {
         {
             header: "Add devices",
             subtext: "Select all electronic devices found in " + selectedRoom + "."
+        },
+
+        {
+            header: "Adjust device settings",
+            subtext: "Choose if each device stays plugged in, add hours of use or sleep, and review their energy impact."
         }
     ]
 
@@ -69,6 +75,7 @@ function CreateRoomPage() {
                 
                   index === 0 ? <RoomNameList setSelectedRoom={setSelectedRoom} selectedRoom={selectedRoom}/> 
                 : index === 1 ? <DevicesNameList setSelectedDevices={setSelectedDevices} selectedDevices={selectedDevices}/>
+                : index === 2 ? <CustomizeDevices />
                 : null
                 
                 }
