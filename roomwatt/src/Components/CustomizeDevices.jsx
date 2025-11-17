@@ -1,5 +1,6 @@
 import React from "react";
 import { useState } from "react";
+import expand from '../assets/back-white.svg'
 
 function CustomizeDevices(props) {
 
@@ -24,6 +25,8 @@ function CustomizeDevices(props) {
                                 <p className={ active === device ? "common-name common-name-active" : "common-name"}>
                                     {device}
                                 </p>
+
+                                <button id="expand-device-btn"><img src={expand} alt={"EXPAND"} /></button>
                             </div>
 
                             <hr style={{ display : index === props.selectedDevices.length-1 && "none" }}/>
