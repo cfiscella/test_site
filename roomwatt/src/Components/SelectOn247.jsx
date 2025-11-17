@@ -5,7 +5,7 @@ function SelectOn247() {
     return(
         <>
             <Form>
-                <Form.Check // prettier-ignore
+                <Form.Check
                     type="switch"
                     id="custom-switch"
                     label="On 24/7"
