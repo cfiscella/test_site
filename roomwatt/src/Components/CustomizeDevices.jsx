@@ -15,6 +15,18 @@ function CustomizeDevices(props) {
         }
     }
 
+    const defaultSettings = {
+        deviceName: "James",
+        on247: false
+    };
+
+    let deviceSettings = new Array(props.selectedDevices.length);
+    for(let i = 0; i < props.selectedDevices.length; i++) {
+        deviceSettings[i] = defaultSettings;
+        deviceSettings[i].deviceName = props.selectedDevices[i];
+        console.log(deviceSettings[i].deviceName);
+    }
+
     return(
         <>
             <div className="list-wrapper">
@@ -30,7 +42,9 @@ function CustomizeDevices(props) {
                                 <button id="expand-device-btn"><img src={device === active ? expanded : expand} alt={"EXPAND"} /></button>
                             </div>
 
-                            <div style={{ display: device === active ? "flex" : "none"}}><p>Hello</p></div>
+                            <div style={{ display: device === active ? "flex" : "none", flexDirection: "column"}}>
+
+                            </div>
 
                             <hr style={{ display : index === props.selectedDevices.length-1 && "none" }}/>
                         </div>
