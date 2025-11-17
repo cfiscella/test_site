@@ -1,10 +1,12 @@
 import React from "react";
 import { useState } from "react";
-import expand from '../assets/back-white.svg'
+import expand from '../assets/back-white.svg';
+import expanded from '../assets/down-green.svg';
 
 function CustomizeDevices(props) {
 
     const [active, setActive] = useState("");
+    const [open, setOpen] = useState(false);
 
     function deviceClicked(device) {
         if(device === active) {
@@ -26,7 +28,7 @@ function CustomizeDevices(props) {
                                     {device}
                                 </p>
 
-                                <button id="expand-device-btn"><img src={expand} alt={"EXPAND"} /></button>
+                                <button id="expand-device-btn"><img src={device === active ? expanded : expand} alt={"EXPAND"} /></button>
                             </div>
 
                             <hr style={{ display : index === props.selectedDevices.length-1 && "none" }}/>
