@@ -12,6 +12,7 @@ function CreateRoomPage() {
 
     const [selectedRoom, setSelectedRoom] = useState("");
     const [selectedDevices, setSelectedDevices] = useState([]);
+    const [deviceSettings, setDeviceSettings] = useState([]);
 
     const indexText = [
         {
@@ -73,9 +74,9 @@ function CreateRoomPage() {
 
                 {
                 
-                  index === 0 ? <RoomNameList setSelectedRoom={setSelectedRoom} selectedRoom={selectedRoom}/> 
-                : index === 1 ? <DevicesNameList setSelectedDevices={setSelectedDevices} selectedDevices={selectedDevices}/>
-                : index === 2 ? <CustomizeDevices />
+                  index === 0 ? <RoomNameList setSelectedRoom={setSelectedRoom} selectedRoom={selectedRoom} /> 
+                : index === 1 ? <DevicesNameList setSelectedDevices={setSelectedDevices} selectedDevices={selectedDevices} />
+                : index === 2 ? <CustomizeDevices selectedDevices={selectedDevices} setDeviceSettings={setDeviceSettings} deviceSettings={deviceSettings} />
                 : null
                 
                 }
@@ -99,3 +100,4 @@ function CreateRoomPage() {
 }
 
 export default CreateRoomPage;
+
