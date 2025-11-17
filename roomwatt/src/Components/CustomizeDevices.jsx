@@ -2,6 +2,7 @@ import React from "react";
 import { useState } from "react";
 import expand from '../assets/back-white.svg';
 import expanded from '../assets/down-green.svg';
+import SelectOn247 from "./SelectOn247";
 
 function CustomizeDevices(props) {
 
@@ -42,8 +43,14 @@ function CustomizeDevices(props) {
                                 <button id="expand-device-btn"><img src={device === active ? expanded : expand} alt={"EXPAND"} /></button>
                             </div>
 
-                            <div style={{ display: device === active ? "flex" : "none", flexDirection: "column"}}>
-
+                            <div 
+                                style={{ 
+                                    maxHeight: device === active ? "100px" : "0", 
+                                    flexDirection: "column", 
+                                    overflowY: "hidden",
+                                    transition: "max-height 0.2s ease-in-out"}}
+                            >
+                                <SelectOn247 />
                             </div>
 
                             <hr style={{ display : index === props.selectedDevices.length-1 && "none" }}/>
