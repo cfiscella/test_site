@@ -3,7 +3,7 @@ import { useLocation, useNavigate } from "react-router-dom";
 import DeleteButton from "../components/DeleteButton";
 import { RoomContext } from "../RoomContext";
 
-export default function EditRoom() {
+function EditRoom() {
     const { state } = useLocation(); 
     const navigate = useNavigate();
   
@@ -61,3 +61,5 @@ export default function EditRoom() {
     </div>
   );
 }
+
+export default EditRoom;
