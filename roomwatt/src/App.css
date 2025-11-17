@@ -109,6 +109,10 @@ header h1 {
   color: var(--primary-color);
 }
 
+#expand-device-btn img {
+  transform: scaleX(-1);
+}
+
 .common-room-name-container hr {
   margin-bottom: 20px;
 }
