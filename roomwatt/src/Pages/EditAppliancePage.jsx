@@ -4,7 +4,7 @@ import DeleteButton from "../components/DeleteButton";
 import { RoomContext } from "../RoomContext";
 
 export default function EditRoom() {
-    const { state } = useLocation(); // room data passed from RoomList
+    const { state } = useLocation(); 
     const navigate = useNavigate();
   
     const { updateApplianceWatts, deleteAppliance, deleteRoom } =
