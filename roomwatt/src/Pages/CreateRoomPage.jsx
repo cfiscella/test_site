@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 import React, { useEffect, useState } from "react";
 import Button from 'react-bootstrap/Button';
 import back from '../assets/back-white.svg'
@@ -101,4 +99,4 @@ function CreateRoomPage() {
 }
 
 export default CreateRoomPage;
->>>>>>> main
+
