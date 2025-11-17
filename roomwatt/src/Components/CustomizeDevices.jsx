@@ -6,7 +6,6 @@ import expanded from '../assets/down-green.svg';
 function CustomizeDevices(props) {
 
     const [active, setActive] = useState("");
-    const [open, setOpen] = useState(false);
 
     function deviceClicked(device) {
         if(device === active) {
@@ -24,12 +23,14 @@ function CustomizeDevices(props) {
                     {props.selectedDevices.map((device, index) => (
                         <div key={index}>
                             <div className="common-name-group" onClick={() => deviceClicked(device)}>
-                                <p className={ active === device ? "common-name common-name-active" : "common-name"}>
+                                <p className={ device === active ? "common-name common-name-active" : "common-name"}>
                                     {device}
                                 </p>
 
                                 <button id="expand-device-btn"><img src={device === active ? expanded : expand} alt={"EXPAND"} /></button>
                             </div>
+
+                            <div style={{ display: device === active ? "flex" : "none"}}><p>Hello</p></div>
 
                             <hr style={{ display : index === props.selectedDevices.length-1 && "none" }}/>
                         </div>
