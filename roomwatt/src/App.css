@@ -276,3 +276,74 @@ header h1 {
   font-size: 14px;
   opacity: 0.7;
 }
+.device-settings-card {
+  background-color: #151515;
+  border-radius: 12px;
+  padding: 16px;
+  margin-bottom: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.device-settings-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.device-name {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.device-room-label {
+  font-size: 12px;
+  opacity: 0.7;
+}
+
+.device-icon {
+  font-size: 20px;
+}
+
+.device-field,
+.device-field-row {
+  margin-top: 10px;
+}
+
+.device-field-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.device-label {
+  font-size: 14px;
+  opacity: 0.9;
+}
+
+.device-wattage-input {
+  width: 120px;
+  padding: 4px 8px;
+  border-radius: 6px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  background: #111;
+  color: #f5f5f5;
+}
+
+.device-summary {
+  margin-top: 12px;
+  padding-top: 8px;
+  border-top: 1px solid rgba(255, 255, 255, 0.12);
+  font-size: 13px;
+  display: grid;
+  row-gap: 4px;
+}
+
+.summary-label {
+  opacity: 0.75;
+  margin-right: 6px;
+}
+
+.summary-value {
+  font-weight: 500;
+}
