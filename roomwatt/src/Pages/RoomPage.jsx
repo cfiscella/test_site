@@ -15,13 +15,22 @@ const RoomPage = () => {
   if (!room) return <p>Room not found</p>;
 
   return (
-    <Container className="mt-4">
+    <Container className="mt-4 room-page-container">
       <Row className="mb-3">
         <Col className="d-flex justify-content-between align-items-center">
           <h3>{room.name}</h3>
           <Button variant="secondary" onClick={() => navigate("/")}>
-            ❌ Back
+            ← Back
           </Button>
+        </Col>
+      </Row>
+
+      {/* New: subtle helper text under the header */}
+      <Row className="mb-3">
+        <Col>
+          <p className="room-page-subtitle">
+            Add or remove appliances in this room to see their daily energy usage.
+          </p>
         </Col>
       </Row>
 
@@ -50,12 +59,11 @@ const RoomPage = () => {
             style={{ height: "100px", cursor: "pointer" }}
             onClick={() => setShowForm(true)}
           >
-            <h3> + Add Appliance</h3>
+            <h3>+ Add Appliance</h3>
           </Card>
         </Col>
       </Row>
 
-      {/* Custom Appliance Form Modal */}
       <AddApplianceForm
         show={showForm}
         handleClose={() => setShowForm(false)}
@@ -64,5 +72,6 @@ const RoomPage = () => {
     </Container>
   );
 };
+
 
 export default RoomPage;
