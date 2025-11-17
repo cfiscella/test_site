@@ -48,7 +48,7 @@ function CustomizeDevices(props) {
                                     maxHeight: device === active ? "100px" : "0", 
                                     flexDirection: "column", 
                                     overflowY: "hidden",
-                                    transition: "max-height 0.2s ease-in-out"}}
+                                    transition: "max-height 0.1s ease-in-out"}}
                             >
                                 <SelectOn247 />
                             </div>
