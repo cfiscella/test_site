@@ -28,17 +28,30 @@ header {
   left: 0;
 
   width: 100%;
-  min-height: var(--header-height); /*fixed variable*/
+  min-height: var(--header-height);
 
   display: flex;
-  flex-direction: column;
   flex-direction: row;
   text-align: center;
   align-items: center;
   justify-content: center;
+  gap: 8px;
 
+  padding: 0 12px;
   background-color: white;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.06);
+  z-index: 10;
 }
+#home-page, #create-room-page, #add-appliance-page {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--home-bkg);
+  padding: var(--header-height) 1rem;
+  color: #f5f5f5; /* new: make text readable on dark background */
+}
+
 
 header h1 {
   font-size: 25px;
@@ -210,7 +223,10 @@ header h1 {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  align-items: flex-start; /* new */
+  margin-top: 1rem;        /* new */
 }
+
 
 .dropdown-btn {
   background-color: #FFFFFF;
@@ -222,4 +238,41 @@ header h1 {
   width: auto;
   object-fit: contain;
   display: block;
+  margin-right: 4px; /* new */
+}
+/* Home page intro text */
+.home-content {
+  margin-top: 2rem;
+  max-width: 320px;
+}
+
+.home-title {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 0.4rem;
+}
+
+.home-subtitle {
+  font-size: 14px;
+  font-weight: 400;
+  opacity: 0.8;
+}
+
+/* Brand title in header */
+.brand-title {
+  font-size: 22px;
+  font-weight: 600;
+  color: var(--primary-color);
+}
+
+/* Room page layout under fixed header */
+.room-page-container {
+  padding-top: calc(var(--header-height) + 16px);
+  padding-bottom: 80px;
+  min-height: 100vh;
+}
+
+.room-page-subtitle {
+  font-size: 14px;
+  opacity: 0.7;
 }
