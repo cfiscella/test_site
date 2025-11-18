@@ -36,7 +36,10 @@ function CreateRoomPage() {
     const navigate = useNavigate();
 
     function incrementIndex() {
-        if(index < indexText.length - 1) { setIndex(index + 1) };
+        if(index === 2){
+            goHome();
+        }
+        else if(index < indexText.length - 1) { setIndex(index + 1) };
         console.log("index:", index);
     }
 
@@ -91,7 +94,7 @@ function CreateRoomPage() {
                         false
                     }
                 >
-                    Next
+                    {index < 2? "Next" : "Finish"}
                 </Button>
 
             </section>
