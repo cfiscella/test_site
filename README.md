@@ -28,8 +28,8 @@
 ## Sprint 2
 * [Sprint planning](https://docs.google.com/spreadsheets/d/1smEJrFjA-T7XzN0RymLpl9p4-XkDZICNJcUuvl5Rz0I/edit?gid=2012099978#gid=2012099978)
 * [Scrums](https://paceuniversity-my.sharepoint.com/:w:/g/personal/so35931n_pace_edu/EQhtEdWDdeJGj517RgC6WRoBBPKz_Wmo_scPeXHKfveD5A?e=NS7m1U)
-* Sprint demo feature
-* [Sprint retrospective]()
+* [Sprint demo feature](https://drive.google.com/file/d/1JzSzE0uv8HBsqZoQLvNPWDWizYgmCN5n/view?usp=sharing)
+* [Sprint retrospective](https://paceuniversity-my.sharepoint.com/:w:/g/personal/so35931n_pace_edu/EfkDAnFCkhdPtYmAgIjCfa0BwiJcUFM-HTj2PV1K6KoY7w)
 
 
 
