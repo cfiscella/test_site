@@ -32,7 +32,7 @@
 * [Sprint retrospective](https://paceuniversity-my.sharepoint.com/:w:/g/personal/so35931n_pace_edu/EfkDAnFCkhdPtYmAgIjCfa0BwiJcUFM-HTj2PV1K6KoY7w)
 
 ## Sprint 3
-* [Sprint planning]()
+* [Sprint planning](https://docs.google.com/spreadsheets/d/1smEJrFjA-T7XzN0RymLpl9p4-XkDZICNJcUuvl5Rz0I/edit?gid=1510869824#gid=1510869824)
 * [Scrums](https://paceuniversity-my.sharepoint.com/:w:/r/personal/so35931n_pace_edu/_layouts/15/Doc.aspx?sourcedoc=%7BBFF3B7E0-FE23-4F66-9B6D-A7070F0C300A%7D&file=Scrum%203.docx&fromShare=true&action=default&mobileredirect=true)
 * [Sprint demo feature]()
 * [Sprint retrospective]()
