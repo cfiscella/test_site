@@ -31,6 +31,12 @@
 * [Sprint demo feature](https://drive.google.com/file/d/1JzSzE0uv8HBsqZoQLvNPWDWizYgmCN5n/view?usp=sharing)
 * [Sprint retrospective](https://paceuniversity-my.sharepoint.com/:w:/g/personal/so35931n_pace_edu/EfkDAnFCkhdPtYmAgIjCfa0BwiJcUFM-HTj2PV1K6KoY7w)
 
+## Sprint 3
+* [Sprint planning]()
+* [Scrums](https://paceuniversity-my.sharepoint.com/:w:/r/personal/so35931n_pace_edu/_layouts/15/Doc.aspx?sourcedoc=%7BBFF3B7E0-FE23-4F66-9B6D-A7070F0C300A%7D&file=Scrum%203.docx&fromShare=true&action=default&mobileredirect=true)
+* [Sprint demo feature]()
+* [Sprint retrospective]()
+
 
 
 
