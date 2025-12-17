@@ -45,5 +45,4 @@
 ## Final Delivery
 * [Final Presentation](https://docs.google.com/presentation/d/1MHRUQgdeHXbm2biuMAuaAkoJtLr1A9ozLKMwvSsonpw/edit?usp=sharing)
 * [Final Poster](https://drive.google.com/file/d/1PGas7BmlIVTs7bmJvuwwr7-dWdd3AxFE/view?usp=sharing)
-* [Process Description](https://paceuniversity-my.sharepoint.com/:w:/g/personal/so35931n_pace_edu/Ee--wSNot-dAktI8pVat2L0BoKMgRrbriMlkcOqUEhV7yQ?e=bl44a7)
 
